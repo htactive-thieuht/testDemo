@@ -1,0 +1,1684 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5008844000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/login",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "User can deposit",
+        "description": "",
+        "id": "deposit;user-can-deposit;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20254324701,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login successfully with account as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 37
+                }
+              ],
+              "location": "DepositTest.loginSuccess(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10254457600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Deposit button",
+            "match": {
+              "location": "DepositTest.btnDeposit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7068863100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I type amount to be Deposited as 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2000",
+                  "offset": 33
+                }
+              ],
+              "location": "DepositTest.inputDeposit(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5241535600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the Deposit button to submit deposit",
+            "match": {
+              "location": "DepositTest.btnSubmitDeposit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14064661800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify user deposit successfully with amount as 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2000",
+                  "offset": 50
+                }
+              ],
+              "location": "DepositTest.depositSuccess(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Deposit",
+    "description": "In order to user can log in, I want to see my profile so I can log in easily",
+    "id": "deposit",
+    "keyword": "Feature",
+    "uri": "loginCustomer/depositCustomer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4927344100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/login",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "User can login website",
+        "description": "",
+        "id": "customer-login;user-can-login-website;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5309268100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Login Customer button to login",
+            "match": {
+              "location": "LoginTest.clickCustomerLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6564644999,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I choose account of user as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.chooseAccount(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5276893300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click button Login",
+            "match": {
+              "location": "LoginTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5042060300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify information of user logged correctly with account as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginTest.verifyInfoCorrect(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer login",
+    "description": "In order to user can log in, I want to see my profile so I can log in easily",
+    "id": "customer-login",
+    "keyword": "Feature",
+    "uri": "loginCustomer/loginCustomer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4892152099,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/login",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "User can see transactions table",
+        "description": "",
+        "id": "customer-transactions;user-can-see-transactions-table;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20154026901,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I can login successfully with the account as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 45
+                }
+              ],
+              "location": "TransactionsTest.loginCustomer(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42711796199,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I deposited into account 3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 25
+                }
+              ],
+              "location": "TransactionsTest.deposit(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24434152300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I deposited extra into account 3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 31
+                }
+              ],
+              "location": "TransactionsTest.extraDeposit(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18569016900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I withdrawal into account 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2000",
+                  "offset": 26
+                }
+              ],
+              "location": "TransactionsTest.setWithdrawal(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5735361800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Transactions button",
+            "match": {
+              "location": "TransactionsTest.clickBtnTransactions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10208909501,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify table is appeared and show deposit success as 3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 55
+                }
+              ],
+              "location": "TransactionsTest.checkTable(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5726354000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click button Reset to delete all transactions",
+            "match": {
+              "location": "TransactionsTest.clickBtnReset()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5058052400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify reset table successfully",
+            "match": {
+              "location": "TransactionsTest.verifyTableAfterReset()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5084378900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click button Back to back Account page",
+            "match": {
+              "location": "TransactionsTest.setClickBtnBack()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5027831699,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I verify balance amount and reset successfully",
+            "match": {
+              "location": "TransactionsTest.balance()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Customer transactions",
+    "description": "In order to user can log in, I want to see my profile so I can log in easily",
+    "id": "customer-transactions",
+    "keyword": "Feature",
+    "uri": "loginCustomer/transactionsCustomer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4812358200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/login",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Customer Withdrawal Successfully",
+        "description": "",
+        "id": "customer-withdrawal-successfully;customer-withdrawal-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19162719000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login successfully with the account as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 41
+                }
+              ],
+              "location": "WithdrawalTest.loginSuccess(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36606317900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I deposited into my account 3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 28
+                }
+              ],
+              "location": "WithdrawalTest.depositAmount(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5733391401,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Withdrawal button",
+            "match": {
+              "location": "WithdrawalTest.btnWithdrawal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7070975401,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I type amount to be Withdrawal as 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 34
+                }
+              ],
+              "location": "WithdrawalTest.inputWithdrawal(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5724518700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the Withdrawal button to submit withdrawal",
+            "match": {
+              "location": "WithdrawalTest.btnSubmitWithdrawal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5075792301,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify user withdrawal successfully",
+            "match": {
+              "location": "WithdrawalTest.withdrawalSuccess()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3046809100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/login",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Customer Withdrawal Unsuccessfully",
+        "description": "",
+        "id": "customer-withdrawal-successfully;customer-withdrawal-unsuccessfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18729209800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I login successfully with the account as Harry Potter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry Potter",
+                  "offset": 41
+                }
+              ],
+              "location": "WithdrawalTest.loginSuccess(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37055389100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I deposited into my account 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000",
+                  "offset": 28
+                }
+              ],
+              "location": "WithdrawalTest.depositAmount(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5727627900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on Withdrawal button",
+            "match": {
+              "location": "WithdrawalTest.btnWithdrawal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7055256201,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I type amount to be Withdrawal as 3000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 34
+                }
+              ],
+              "location": "WithdrawalTest.inputWithdrawal(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5727911401,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on the Withdrawal button to submit withdrawal",
+            "match": {
+              "location": "WithdrawalTest.btnSubmitWithdrawal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5096006400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I verify user withdrawal unsuccessfully",
+            "match": {
+              "location": "WithdrawalTest.withdrawalUnsuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer Withdrawal Successfully",
+    "description": "",
+    "id": "customer-withdrawal-successfully",
+    "keyword": "Feature",
+    "uri": "loginCustomer/withdrawalCustomer.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5368041299,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Add customer successfully",
+        "description": "",
+        "id": "add-customer;add-customer-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6338100700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I type first name as ho, last name as thieu, post code as 55000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ho",
+                  "offset": 21
+                },
+                {
+                  "val": "thieu",
+                  "offset": 38
+                },
+                {
+                  "val": "55000",
+                  "offset": 58
+                }
+              ],
+              "location": "AddCustomerTest.inputUserInformation(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108421399,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click submit",
+            "match": {
+              "location": "AddCustomerTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28906866800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify that system is already added customer as ho thieu successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ho thieu",
+                  "offset": 50
+                }
+              ],
+              "location": "AddCustomerTest.verifyCustomerAddSuccessfully(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3034511201,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Add customer successfully",
+        "description": "",
+        "id": "add-customer;add-customer-successfully;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6142801200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I type first name as hoang, last name as thuong, post code as 55000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hoang",
+                  "offset": 21
+                },
+                {
+                  "val": "thuong",
+                  "offset": 41
+                },
+                {
+                  "val": "55000",
+                  "offset": 62
+                }
+              ],
+              "location": "AddCustomerTest.inputUserInformation(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33700399,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click submit",
+            "match": {
+              "location": "AddCustomerTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28796596300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify that system is already added customer as hoang thuong successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hoang thuong",
+                  "offset": 50
+                }
+              ],
+              "location": "AddCustomerTest.verifyCustomerAddSuccessfully(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3033270099,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Add Customer unsuccessfully",
+        "description": "",
+        "id": "add-customer;add-customer-unsuccessfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6130612600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I type first name as hoang, last name as , post code as 55000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hoang",
+                  "offset": 21
+                },
+                {
+                  "val": "",
+                  "offset": 41
+                },
+                {
+                  "val": "55000",
+                  "offset": 56
+                }
+              ],
+              "location": "AddCustomerTest.inputUserInformation(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 233581299,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click submit",
+            "match": {
+              "location": "AddCustomerTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20392627300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify that system is already added customer as hoang unsuccessfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hoang",
+                  "offset": 50
+                }
+              ],
+              "location": "AddCustomerTest.verifyCustomerAddUnSuccessfully(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3063705300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Add Customer unsuccessfully",
+        "description": "",
+        "id": "add-customer;add-customer-unsuccessfully;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6204874100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I type first name as , last name as thuong, post code as 55000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                },
+                {
+                  "val": "thuong",
+                  "offset": 36
+                },
+                {
+                  "val": "55000",
+                  "offset": 57
+                }
+              ],
+              "location": "AddCustomerTest.inputUserInformation(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 229434101,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click submit",
+            "match": {
+              "location": "AddCustomerTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20434051600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify that system is already added customer as thuong unsuccessfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "thuong",
+                  "offset": 50
+                }
+              ],
+              "location": "AddCustomerTest.verifyCustomerAddUnSuccessfully(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add customer",
+    "description": "",
+    "id": "add-customer",
+    "keyword": "Feature",
+    "uri": "managerCustomer/addCustomer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4834144999,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/manager/list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/manager/list",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Delete customer successfully",
+        "description": "",
+        "id": "delete-customer;delete-customer-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7405648300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click delete button with first name as Harry, last name as Potter, post code as E725JB and account number as 1004",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry",
+                  "offset": 41
+                },
+                {
+                  "val": "Potter",
+                  "offset": 61
+                },
+                {
+                  "val": "E725JB",
+                  "offset": 82
+                },
+                {
+                  "val": "1004",
+                  "offset": 111
+                }
+              ],
+              "location": "DeleteCustomer.clickDelete(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5106896700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify customer delete successfully with first name as Harry, last name as Potter, post code as E725JB and account number as 1004",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harry",
+                  "offset": 57
+                },
+                {
+                  "val": "Potter",
+                  "offset": 77
+                },
+                {
+                  "val": "E725JB",
+                  "offset": 98
+                },
+                {
+                  "val": "1004",
+                  "offset": 127
+                }
+              ],
+              "location": "DeleteCustomer.verifyDeleteSuccess(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3023188300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/manager/list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/manager/list",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Delete customer unsuccessfully",
+        "description": "",
+        "id": "delete-customer;delete-customer-unsuccessfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7075532700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click delete button with first name as Thuong, last name as Potter, post code as E725JB and account number as 1004",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thuong",
+                  "offset": 41
+                },
+                {
+                  "val": "Potter",
+                  "offset": 62
+                },
+                {
+                  "val": "E725JB",
+                  "offset": 83
+                },
+                {
+                  "val": "1004",
+                  "offset": 112
+                }
+              ],
+              "location": "DeleteCustomer.clickDelete(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5082556200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify customer delete unsuccessfully with first name as Thuong, last name as Potter, post code as E725JB and account number as 1004",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thuong",
+                  "offset": 59
+                },
+                {
+                  "val": "Potter",
+                  "offset": 80
+                },
+                {
+                  "val": "E725JB",
+                  "offset": 101
+                },
+                {
+                  "val": "1004",
+                  "offset": 130
+                }
+              ],
+              "location": "DeleteCustomer.verifyDeleteUnsuccessful(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Delete customer",
+    "description": "",
+    "id": "delete-customer",
+    "keyword": "Feature",
+    "uri": "managerCustomer/deleteCustomer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5689947799,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/manager/openAccount",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/manager/openAccount",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Open Account successfully",
+        "description": "",
+        "id": "open-account;open-account-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16095394500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I choose account as Albus Dumbledore and currency as Pound",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Albus Dumbledore",
+                  "offset": 20
+                },
+                {
+                  "val": "Pound",
+                  "offset": 53
+                }
+              ],
+              "location": "OpenAccountTest.openAccount(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18067001200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click process button",
+            "match": {
+              "location": "OpenAccountTest.click_process_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25417866899,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify that user is already opened with first name as Albus and last name as Dumbledore",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Albus",
+                  "offset": 56
+                },
+                {
+                  "val": "Dumbledore",
+                  "offset": 79
+                }
+              ],
+              "location": "OpenAccountTest.verifyOpenAccountSuccessfully(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Open Account",
+    "description": "",
+    "id": "open-account",
+    "keyword": "Feature",
+    "uri": "managerCustomer/openCustomer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3427425401,
+              "error_message": "org.openqa.selenium.WebDriverException: Failed to decode response from marionette\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027PNVD046\u0027, ip: \u0027192.168.2.157\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14788, moz:profile: C:\\Users\\admin\\AppData\\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: bc42275c-cacf-48de-b9c9-9fc0e55a15fe\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat tests.CommonTest.user_already_on_home_page(CommonTest.java:15)\r\n\tat ✽.Given Open website https://www.way2automation.com/angularjs-protractor/banking/#/manager(managerCustomer/searchCustomer.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/manager",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/manager",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Search customer successfully",
+        "description": "",
+        "id": "search-customer;search-customer-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I click customer tab",
+            "match": {
+              "location": "SearchTest.clickCustomerTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I type value as v on search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "v",
+                  "offset": 16
+                }
+              ],
+              "location": "SearchTest.getKeySearch(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I verify search success with keyword as v",
+            "match": {
+              "arguments": [
+                {
+                  "val": "v",
+                  "offset": 40
+                }
+              ],
+              "location": "SearchTest.verify(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3020295200,
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027PNVD046\u0027, ip: \u0027192.168.2.157\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14788, moz:profile: C:\\Users\\admin\\AppData\\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: bc42275c-cacf-48de-b9c9-9fc0e55a15fe\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat tests.CommonTest.user_already_on_home_page(CommonTest.java:15)\r\n\tat ✽.Given Open website https://www.way2automation.com/angularjs-protractor/banking/#/manager(managerCustomer/searchCustomer.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Open website https://www.way2automation.com/angularjs-protractor/banking/#/manager",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.way2automation.com/angularjs-protractor/banking/#/manager",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.user_already_on_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Search customer successfully",
+        "description": "",
+        "id": "search-customer;search-customer-successfully;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I click customer tab",
+            "match": {
+              "location": "SearchTest.clickCustomerTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I type value as p on search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "p",
+                  "offset": 16
+                }
+              ],
+              "location": "SearchTest.getKeySearch(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I verify search success with keyword as p",
+            "match": {
+              "arguments": [
+                {
+                  "val": "p",
+                  "offset": 40
+                }
+              ],
+              "location": "SearchTest.verify(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search customer",
+    "description": "",
+    "id": "search-customer",
+    "keyword": "Feature",
+    "uri": "managerCustomer/searchCustomer.feature"
+  }
+]
